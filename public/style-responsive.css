@@ -1,0 +1,90 @@
+@media only screen and (max-width:1200px) {
+    .profileInfo {
+        margin: 20px;
+    }
+
+    .albumLists {
+        margin: 20px;
+    }
+
+}
+
+@media only screen and (max-width:900px) {
+    .profileInfo {
+        display: block;
+        padding: 20px 0px 0px;
+    }
+
+    .profileInfo .profilePic {
+        margin: 0px auto;
+    }
+
+    .profileInfo .profileBio {
+        width: 100%;
+        margin: 15px 0px 0px;
+        text-align: center;
+    }
+
+    .profileInfo .profileBio h1 {
+        margin-bottom: 0px;
+    }
+
+    .profileInfo .profileBio h3 {
+        display: none;
+    }
+
+    .profileInfo .profileContactInfo {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .profileInfo .profileContactInfo label {
+        margin: 0px;
+    }
+
+    .profileInfo .profileContactInfo {
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .albumLists ul {
+        grid-template-columns: 48% 48%;
+        grid-column-gap: 4%;
+        grid-row-gap: 25px;
+    }
+}
+
+@media only screen and (max-width:720px) {
+    .systemAccessCard {
+        min-width: auto;
+        margin: 35px 15px;
+    }
+
+    .systemAccessCard .col2 {
+        grid-template-columns: 100%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+
+    .profileInfo .profileContactInfo {
+        display: block;
+        text-align: left;
+        padding: 0px;
+        border-top: none;
+    }
+
+    .profileInfo .profileContactInfo div {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 15px;
+    }
+
+    .albumLists ul {
+        grid-template-columns: 100%;
+        grid-column-gap: 0%;
+        grid-row-gap: 25px;
+    }
+}

@@ -1,0 +1,392 @@
+/* 
+    Import Google Poppins Font ::
+    
+    font-family:'Poppins', sans-serif;
+    font-weight:400;
+
+    400 -> Regular font
+    500 -> Medium Font
+    600 -> Semibold Font
+    700 -> Bold
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*
+   =======================
+   DEFAULT CSS
+   =======================
+*/
+* {
+    box-sizing: border-box;
+    position: relative;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+
+    background-color: #ffff;
+    overflow-x: hidden;
+    background: #fff;
+    direction: ltr;
+}
+
+header,
+footer,
+menu,
+nav,
+article,
+section,
+aside,
+form {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+    margin: 0px;
+    padding: 0px;
+}
+
+a,
+span,
+label,
+dt,
+dl,
+i {
+    display: inline-block;
+}
+
+a {
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+    color: #F94E3C;
+}
+
+img {
+    outline: none;
+    border: none;
+    max-width: 100%;
+}
+
+input[type="submit"],
+input[type="button"],
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 10px 15px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 15px;
+    background: #ffffff;
+    resize: none;
+    transition: border 0.3s ease-out;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #12e95a;
+}
+
+
+/*
+	=======================
+	Layouts
+	=======================
+*/
+.root {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0px auto;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+
+/*
+	=======================
+    Gradient Styles
+	=======================
+*/
+.gradientStyle1 {
+    background: rgb(254, 199, 135);
+    background: linear-gradient(63deg, rgba(254, 199, 135, 1) 0%, rgba(255, 143, 135, 1) 100%);
+    min-height: 100vh;
+}
+
+.gradientStyle2 {
+    background: rgb(127, 98, 68);
+    background: linear-gradient(63deg, rgba(127, 98, 68, 1) 0%, rgba(249, 225, 186, 1) 46%, rgba(122, 144, 175, 1) 100%);
+    min-height: 100vh;
+}
+
+/*  =============== password Field Control */
+.passwordField {
+    position: relative;
+}
+
+.passwordField a {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    width: auto;
+    height: 100%;
+    padding: 0px 10px;
+}
+
+.passwordField input {
+    padding-right: 50px !important;
+    width: 100%;
+}
+
+.passwordField a span {
+    top: calc(50% - 13px);
+    position: relative;
+    width: 26px;
+    height: 25px;
+    display: inline-block;
+}
+
+/*.passwordField a span.show {
+    background: url("/assets/eye_active.png") no-repeat;
+}
+
+.passwordField a span.hide {
+    background: url("/assets/eye_inactive.png") no-repeat;
+}*/
+
+.passwordField a img {
+    vertical-align: middle;
+}
+
+.passwordField .inputLoader {
+    right: -35px;
+    top: 10px;
+}
+
+/*
+	=======================
+	Buttons
+	=======================
+*/
+.primaryBtn {
+    border: none;
+    background-color: #FF6C62;
+    color: #fff;
+    font-weight: 500;
+    padding: 12px 25px;
+    transition: background-color 0.3s ease-out;
+}
+
+.primaryBtn:hover {
+    background-color: #e5594f;
+}
+
+button:disabled .btnLoader {
+    display: flex;
+}
+
+.btnLoader {
+    background: #FF6C62;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 4px;
+    cursor: wait;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinLoader {
+    border: 4px solid #ca554c;
+    border-radius: 50%;
+    border-top: 4px solid #ffffff;
+    width: 22px;
+    height: 22px;
+    -webkit-animation: spin 0.5s linear infinite;
+    animation: spin 0.5s linear infinite;
+    display: inline-block;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*
+	=======================
+    Alert Message
+	=======================
+*/
+.alertMessage {
+    background-color: #CFE2FF;
+    border: 1px solid #9EC5FE;
+    text-align: left;
+    font-size: 14px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.alertMessage.error {
+    background-color: #FEE8EA;
+    border-color: #F1AEB5;
+    color: #802f36;
+}
+
+.alertMessage.warning {
+    background-color: #FAF2D8;
+    border-color: #FFE69C;
+    color: #82670f;
+}
+
+.alertMessage.success {
+    background-color: #D8F6E8;
+    border-color: #A3CFBB;
+    color: #51846d;
+}
+
+/*
+	=======================
+	Form
+	=======================
+*/
+.formRow,
+.formLinks {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.formLinks {
+    font-size: 14px;
+}
+
+.formRow label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.formRow input {
+    width: 100%;
+}
+
+.formButton {
+    margin-top: 30px;
+}
+
+.validationMessage {
+    font-size: 12px;
+    color: red;
+}
+
+/*
+	=======================
+	Model
+	=======================
+*/
+.modelOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 110%;
+    background: rgba(2, 4, 27, .8);
+    z-index: 100;
+}
+
+.model {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 125;
+}
+
+.modelWrapper {
+    max-width: 650px !important;
+    background: #fff;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.modelWrapper .close {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    z-index: 10;
+    text-align: center;
+    line-height: 40px;
+}
+
+.modelWrapper .close img {
+    vertical-align: middle;
+}
+
+.modelWrapper h5 {
+    font-size: 18px;
+    padding: 15px 20px;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}

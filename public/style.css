@@ -1,0 +1,220 @@
+/*
+Theme Name: Creative Guild
+Version: 1.1
+*/
+
+/* Include Theme file */
+@import "theme.css";
+
+
+/*
+	=======================
+    system Access CSS
+	=======================
+*/
+.systemAccessCard {
+    background: #fff;
+    margin: 35px 0px;
+    padding: 35px 6%;
+    border-radius: 5px;
+    min-width: 550px;
+    max-width: 650px;
+    text-align: center;
+
+}
+
+.registerForm {
+    padding: 35px 2%;
+}
+
+.systemAccessCard .logo img {
+    max-width: 75px;
+}
+
+.systemAccessCard h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 8px 0px;
+}
+
+.systemAccessCard p {
+    color: #262626;
+}
+
+.systemAccessCard form {
+    margin-top: 30px;
+}
+
+.col2 {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 4%;
+}
+
+/*
+	=======================
+    Profile Page CSS
+	=======================
+*/
+.profileInfo {
+    margin: 35px 0px 20px;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: normal;
+    align-content: normal;
+}
+
+.profileInfo .profilePic {
+    width: 150px;
+    height: 150px;
+
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.profileInfo .profilePic img.avatar {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 2px solid transparent;
+}
+
+.profileInfo .profilePic img:hover.avatar {
+    border-color: #F94E3C;
+}
+
+.profileInfo .profileBio {
+    width: calc(100% - 460px);
+    margin: 0px 30px;
+}
+
+.profileInfo .profileBio h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.profileInfo .profileBio h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #494949;
+}
+
+.profileInfo .profileBio p {
+    font-size: 15px;
+    color: #494949;
+}
+
+.profileInfo .profileContactInfo {
+
+    width: 250px;
+    align-self: flex-end;
+}
+
+.profileInfo .profileContactInfo label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #494949;
+    display: block;
+    margin-top: 15px;
+}
+
+.albumLists {
+    margin: 35px 0px;
+}
+
+.albumLists ul {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-column-gap: 2%;
+    grid-row-gap: 25px;
+    overflow: hidden;
+}
+
+.albumLists ul li {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.albumLists ul li .albumThumbnail {
+    background-color: #494949;
+    width: 100%;
+    height: 200px;
+}
+
+.albumLists ul li .albumThumbnail span {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    top: 0px;
+    left: 0px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7512138644520308) 0%, rgba(0, 0, 0, 0.020121427477240883) 40%);
+    display: flex;
+    align-items: end;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.albumLists ul li .albumThumbnail img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.albumLists ul li .excerpt {
+    padding: 10px 15px;
+    font-size: 15px;
+    color: #494949;
+}
+
+.albumLists ul li .albumMeta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9px;
+    font-size: 13px;
+}
+
+.uploadProfilePic {
+    display: flex;
+    justify-content: flex-start;
+    padding: 25px;
+    font-size: 14px;
+}
+
+.uploadProfilePic .avtar {
+    width: 200px;
+    margin-right: 40px;
+}
+
+.uploadProfilePic .avtar img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    vertical-align: top;
+    border-radius: 100%;
+}
+
+.uploadProfilePic h6 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.uploadProfilePic p {
+    margin-bottom: 20px;
+}
+
+.uploadProfilePic input[type="file"] {
+    margin-bottom: 20px;
+}
